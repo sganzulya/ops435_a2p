@@ -1,0 +1,170 @@
+Testing for Date class - Test number: 1
+---------------------------------------
+Test for date1: 2019/11/05
+date1  is: 2019/11/05
+  expected tomorrow should be: (2019, 11, 6)
+     your date1.tomorrow() is: 2019/11/06
+Test for tomorrow method: passed
+  expected yesterday should be: (2019, 11, 4)
+     your date1.yesterday() is: 2019/11/04
+Test for yesterday method: passed
+      test result: 2/2
+==================================================
+Testing for Date class - Test number: 2
+---------------------------------------
+Test for date1: 2019/02/28
+date1  is: 2019/02/28
+  expected tomorrow should be: (2019, 3, 1)
+     your date1.tomorrow() is: 2019/03/01
+Test for tomorrow method: passed
+  expected yesterday should be: (2019, 2, 27)
+     your date1.yesterday() is: 2019/02/27
+Test for yesterday method: passed
+      test result: 2/2
+==================================================
+Testing for Date class - Test number: 3
+---------------------------------------
+Test for date1: 2019/01/01
+date1  is: 2019/01/01
+  expected tomorrow should be: (2019, 1, 2)
+     your date1.tomorrow() is: 2019/01/02
+Test for tomorrow method: passed
+  expected yesterday should be: (2018, 12, 31)
+     your date1.yesterday() is: 2018/12/31
+Test for yesterday method: passed
+      test result: 2/2
+==================================================
+Testing for Date class - Test number: 4
+---------------------------------------
+Test for date1: 2019/12/31
+date1  is: 2019/12/31
+  expected tomorrow should be: (2020, 1, 1)
+     your date1.tomorrow() is: 2020/01/01
+Test for tomorrow method: passed
+  expected yesterday should be: (2019, 12, 30)
+     your date1.yesterday() is: 2019/12/30
+Test for yesterday method: passed
+      test result: 2/2
+==================================================
+Testing for Date class - Test number: 5
+---------------------------------------
+Test for date1: 1999/12/31
+date1  is: 1999/12/31
+  expected tomorrow should be: (2000, 1, 1)
+     your date1.tomorrow() is: 2000/01/01
+Test for tomorrow method: passed
+  expected yesterday should be: (1999, 12, 30)
+     your date1.yesterday() is: 1999/12/30
+Test for yesterday method: passed
+      test result: 2/2
+==================================================
+Testing for Date class - Test number: 6
+---------------------------------------
+Test for date1: 2000/02/28
+date1  is: 2000/02/28
+  expected tomorrow should be: (2000, 2, 29)
+     your date1.tomorrow() is: 2000/02/29
+Test for tomorrow method: passed
+  expected yesterday should be: (2000, 2, 27)
+     your date1.yesterday() is: 2000/02/27
+Test for yesterday method: passed
+      test result: 2/2
+==================================================
+Testing for Date class - Test number: 7
+---------------------------------------
+Test for date1: 2000/03/01
+date1  is: 2000/03/01
+  expected tomorrow should be: (2000, 3, 2)
+     your date1.tomorrow() is: 2000/03/02
+Test for tomorrow method: passed
+  expected yesterday should be: (2000, 2, 29)
+     your date1.yesterday() is: 2000/02/29
+Test for yesterday method: passed
+      test result: 2/2
+==================================================
+Testing for Date class - Test number: 8
+---------------------------------------
+Test for date1: 2016/12/31
+date1  is: 2016/12/31
+  expected tomorrow should be: (2017, 1, 1)
+     your date1.tomorrow() is: 2017/01/01
+Test for tomorrow method: passed
+  expected yesterday should be: (2016, 12, 30)
+     your date1.yesterday() is: 2016/12/30
+Test for yesterday method: passed
+      test result: 2/2
+==================================================
+Testing for Date class - Test number: 9
+---------------------------------------
+Test for date1: 2016/02/28
+date1  is: 2016/02/28
+  expected tomorrow should be: (2016, 2, 29)
+     your date1.tomorrow() is: 2016/02/29
+Test for tomorrow method: passed
+  expected yesterday should be: (2016, 2, 27)
+     your date1.yesterday() is: 2016/02/27
+Test for yesterday method: passed
+      test result: 2/2
+==================================================
+Testing for Date class - Test number: 10
+----------------------------------------
+Test for date1: 2016/03/01
+date1  is: 2016/03/01
+  expected tomorrow should be: (2016, 3, 2)
+     your date1.tomorrow() is: 2016/03/02
+Test for tomorrow method: passed
+  expected yesterday should be: (2016, 2, 29)
+     your date1.yesterday() is: 2016/02/29
+Test for yesterday method: passed
+      test result: 2/2
+==================================================
+Testing for Date class - Test number: 11
+----------------------------------------
+Test for date1: 2019/07/31
+date1  is: 2019/07/31
+  expected tomorrow should be: (2019, 8, 1)
+     your date1.tomorrow() is: 2019/08/01
+Test for tomorrow method: passed
+  expected yesterday should be: (2019, 7, 30)
+     your date1.yesterday() is: 2019/07/30
+Test for yesterday method: passed
+      test result: 2/2
+==================================================
+Testing for Date class - Test number: 12
+----------------------------------------
+Test for date1: 2019/08/31
+date1  is: 2019/08/31
+  expected tomorrow should be: (2019, 9, 1)
+     your date1.tomorrow() is: 2019/09/01
+Test for tomorrow method: passed
+  expected yesterday should be: (2019, 8, 30)
+     your date1.yesterday() is: 2019/08/30
+Test for yesterday method: passed
+      test result: 2/2
+==================================================
+Testing for Date class - Test number: 13
+----------------------------------------
+Test for date1: 2019/10/01
+date1  is: 2019/10/01
+  expected tomorrow should be: (2019, 10, 2)
+     your date1.tomorrow() is: 2019/10/02
+Test for tomorrow method: passed
+  expected yesterday should be: (2019, 9, 30)
+     your date1.yesterday() is: 2019/09/30
+Test for yesterday method: passed
+      test result: 2/2
+==================================================
+Testing for Date class - Test number: 14
+----------------------------------------
+Test for date1: 2019/11/30
+date1  is: 2019/11/30
+  expected tomorrow should be: (2019, 12, 1)
+     your date1.tomorrow() is: 2019/12/01
+Test for tomorrow method: passed
+  expected yesterday should be: (2019, 11, 29)
+     your date1.yesterday() is: 2019/11/29
+Test for yesterday method: passed
+      test result: 2/2
+==================================================
+Maximum total test score: 28
+Total test score for this test run: 28

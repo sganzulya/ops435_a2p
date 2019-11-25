@@ -1,13 +1,17 @@
 #!/usr/bin/env python3
 class Date:
     def __init__(self, year, month, day):
+    
+    
+        '''Testing to see if entered date is correct in the correct format & not above/below maximum number of days in a month '''
+
 
         mon_max = self.days_in_mon(year)
         if (month > 12 or month < 1) :
-            print("Error: wrong month entered")
+            print("Error: wrong month entered, yyyy,mm,dd")
             return False
         elif (day > mon_max[month] or day < 1):
-            print("Error: wrong day entered")
+            print("Error: wrong day entered, yyyy,mm,dd")
         else:  
             self.year = year
             self.month = month
@@ -22,10 +26,20 @@ class Date:
         #return date object as a string in "yyyy/mm/dd" format
 
     def days_in_mon(self, year):
+    
+    
+        '''Calculates maximum number of days per month in a dictionary and using the leapyear function for feburary'''
+    
+    
         feb_max = 29 if self.leap_year(year) else 28
         return { 1:31, 2:feb_max, 3:31, 4:30, 5:31, 6:30, 7:31, 8:31, 9:30, 10:31, 11:30, 12:31}
      
     def leap_year(self, year):
+    
+    
+        '''Calculates if date given is a Leapyear'''
+    
+    
         lyear = year % 4
         leapYear = True if lyear == 0 else False
      
@@ -40,6 +54,11 @@ class Date:
         return leapYear
         
     def __add__(self, other):
+    
+    
+        '''overloading addition to add a certain range of days to an existing date object'''
+    
+    
         day = self.day
         month = self.month
         year = self.year
@@ -47,9 +66,9 @@ class Date:
         mon_max = self.days_in_mon(year)
 
         for x in range(int(other)):
-            day += 1 # next day
+            day += 1
             if day > mon_max[month]:
-                day = 1 # if tmp_day > this month's max, reset to 1
+                day = 1 
                 month += 1
            
             if month > 12:
@@ -61,6 +80,11 @@ class Date:
               
        
     def  __sub__(self, other):
+    
+    
+        '''overloading subtraction to subtract a certain range of days from an existing date object'''
+    
+    
         if type(other) is not Date:
             day = self.day
             month = self.month
@@ -69,7 +93,7 @@ class Date:
             mon_max = self.days_in_mon(year)
 
             for x in range(int(other)):
-                day -= 1 # previous day
+                day -= 1
                 if day < 1:
                     month -= 1
                     if month < 1:
@@ -90,10 +114,14 @@ class Date:
         return self - 1
 
     def day_of_week(self):
+    
+    
+        '''Calculates the day of the week, 0-6 https://en.wikipedia.org/wiki/Zeller%27s_congruence'''
+    
+    
         day = self.day
         month = self.month
         year = self.year
-        # https://en.wikipedia.org/wiki/Zeller%27s_congruence
         if month == 1:
             month = 13
             year -= 1
@@ -107,7 +135,11 @@ class Date:
         return dayOfWeek
 
     def days_to_time(self):
-        #convert an integer which is n days from epoch (Jan 1, 1970) to a corresponding date object
+    
+    
+        '''convert an integer which is n days from epoch (Jan 1, 1970) to a corresponding date object'''
+    
+    
         day1 = self.day
         month1 = self.month
         year1 = self.year
@@ -131,9 +163,9 @@ class Date:
         count = 0
 
         while not(year2 == year1 and month2 == month1 and day2 == day1):
-            day1 = day1 + 1 # next day
+            day1 = day1 + 1
             if day1 > mon_max[month1]:
-                day1 = 1 # if tmp_day > this month's max, reset to 1
+                day1 = 1
                 month1 = month1 + 1
        
             if month1 > 12:
